@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lil Pink</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-5 pt-5">
+        <div class="d-flex justify-content-between">
+            <h1>List Product</h1>
+            <button class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">+Add Product</button>
+        </div>
+        <table class="table table-active m-3 text-center">
+            <thead class="table-bordered fw-bold">
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>PRICE</th>
+                    <th>STOCK</th>
+                    <th>Profile</th>
+                    <th>CATEGORY</th>
+                    <th>ACTION</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Luffy</td>
+                        <td>$3000</td>
+                        <td>1</td>
+                        <td>
+                          <img  width="60" height="60" style="border-radius: 50%;" src="https://static.wikia.nocookie.net/bleach/images/6/68/682Aizen_profile.png/revision/latest/scale-to-width/360?cb=20260319222423&path-prefix=en" alt="">
+                        </td>
+                        <td>Anime</td>
+                         <td>
+                          <button type="button" class="btn btn-warning text-light">View</button>
+                          <button type="button" class="btn btn-danger text-light">Delete</button>
+                          <button type="button" class="btn btn-primary text-light">Edit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </thead>
+        </table>
+    </div>  
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<script src="./js/bootstrap.js"></script>
+</html>
